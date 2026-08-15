@@ -6,6 +6,8 @@ This project analyses user behaviour and website performance using data collecte
 
 The analysis focuses on user engagement, page performance, navigation behaviour, and the conversion funnel from the Homepage through to the Cart.
 
+The purpose of the project is to demonstrate the practical use of Contentsquare for website journey analysis, funnel analysis and UX-focused insights.
+
 ## Objectives
 
 - Analyse user sessions and engagement
@@ -29,7 +31,11 @@ The analysis focuses on user engagement, page performance, navigation behaviour,
 
 The analysis uses data exported from Contentsquare based on activity recorded on the e-commerce storefront.
 
-The available dataset covers 7 sessions during the analysis period. Due to the small sample size, findings are treated as observations and areas for further investigation rather than statistically representative conclusions.
+This project was completed using a Contentsquare trial environment, which limited the amount of data and export functionality available.
+
+The available dataset covers 7 sessions during the analysis period. Due to the small sample size and trial limitations, the findings are treated as directional observations rather than statistically representative conclusions about a wider customer population.
+
+The project is intended to demonstrate the practical use of Contentsquare and the analysis of website behaviour rather than provide production-level performance estimates.
 
 ## Key Metrics
 
@@ -40,7 +46,7 @@ The available dataset covers 7 sessions during the analysis period. Due to the s
 | Bounce Rate | 28.57% |
 | Average Page Views per Session | 17.14 |
 | Homepage → Cart Conversion | 28.57% |
-| Cart Drop-off Rate | 60% |
+| PDP → Cart Drop-off | 60% |
 
 ## Funnel Analysis
 
@@ -55,7 +61,11 @@ The observed user journey was:
 | Product Detail Pages | 5 | 100% |
 | Cart | 2 | 40% |
 
-The largest observed drop-off occurred at the Cart stage, where 3 sessions were lost from the previous stage.
+The largest observed drop-off occurred between the Product Detail Page and Cart stages, where 3 of the 5 sessions reaching the Product Detail Page did not progress to the Cart.
+
+The **PDP → Cart drop-off is therefore 60%**.
+
+The available storefront and Contentsquare trial environment did not provide a reliable live checkout/payment stage for this analysis. As a result, the measurable funnel ends at Cart and no Cart → Purchase conversion is claimed.
 
 ## Visual Analysis
 
@@ -69,7 +79,7 @@ The chart shows the number of sessions progressing through each stage of the obs
 
 ![Conversion Rate by Funnel Stage](conversion_rate_by_funnel_stage.png)
 
-The conversion-rate comparison highlights the Cart stage as the main observed point of drop-off.
+The conversion-rate comparison highlights the transition from Product Detail Pages to Cart as the main observed point of drop-off.
 
 ### Contentsquare Journey Analysis
 
@@ -82,19 +92,26 @@ The Contentsquare journey visualisation shows the observed navigation paths from
 - 7 sessions generated 120 page views during the analysis period.
 - Average page views per session were 17.14.
 - The overall Homepage-to-Cart conversion was 28.57%.
-- The largest observed drop-off occurred at the Cart stage, with a 60% drop-off rate.
+- The largest observed drop-off was between Product Detail Pages and Cart, with a 60% drop-off rate.
 - Product Detail Pages showed 100% conversion from the preceding funnel stage in the observed data.
+- The results should be treated as directional because of the small sample size and limitations of the Contentsquare trial environment.
 
 ## Recommendations
 
 - Investigate potential friction within the Cart and checkout experience.
 - Review navigation and usability around the transition from Product Detail Pages to Cart.
-- Continue collecting data to establish a larger sample size.
+- Continue collecting data in a production environment to establish a larger sample size.
 - Reassess funnel performance as more user sessions become available.
 
 ## Limitations
 
-The analysis is based on a small sample of 7 sessions. The results should therefore be treated as directional observations rather than statistically representative conclusions about the wider customer population.
+This analysis is based on a small sample of 7 sessions collected using a Contentsquare trial environment.
+
+The trial environment limited the amount of data and export functionality available. The available data therefore provides a small snapshot of user behaviour rather than a statistically representative view of the wider customer population.
+
+The storefront also did not provide a reliable measurable checkout/payment stage within the available setup, so the analysis intentionally ends at the Cart stage.
+
+The results should therefore be treated as directional observations and a demonstration of the Contentsquare analysis workflow rather than production-level conversion estimates.
 
 ## Project Files
 
@@ -104,4 +121,8 @@ The analysis is based on a small sample of 7 sessions. The results should theref
 - `New dashboard-08_15_2026-Contentsquare.xlsx` — Contentsquare funnel data
 - `Segment-08_15_2026-Contentsquare.xlsx` — Contentsquare segment data
 
-**AI Assistance:** AI was used for coding assistance, troubleshooting, and validation throughout the project. The analysis and final decisions were reviewed and completed by me.
+## AI Assistance
+
+AI assistance was used during development for coding help, troubleshooting and validation.
+
+The analysis, results and final decisions were reviewed and completed by me.
