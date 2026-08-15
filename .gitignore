@@ -1,6 +1,0 @@
-# Jupyter creates these automatically; they are not part of the analysis.
-.ipynb_checkpoints/
-
-# Python cache files are local runtime artefacts.
-__pycache__/
-*.py[cod]
